@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SCRS – Explore our upcoming and past international conferences.">
+  <title>Conferences – Siddhi Vinayak Shiksha Samiti</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/conferences.css">
+</head>
+
+<body>
+
+  <!-- Navbar injected by navbar-include.js -->
+
+  <!-- ══════════════════════ HERO ══════════════════════ -->
+  <section class="conf-hero">
+    <div class="conf-hero-inner">
+      <span class="conf-eyebrow">Global Research Events</span>
+      <h1 class="conf-hero-title">International Conferences</h1>
+      <p class="conf-hero-sub">Discover world-class academic conferences organized by<br>
+        Siddhi Vinayak Shiksha Samiti across computing, engineering &amp; sciences.</p>
+      <div class="conf-stats-row">
+        <div class="conf-stat"><span class="conf-stat-num">120+</span><span class="conf-stat-lbl">Conferences
+            Hosted</span></div>
+        <div class="conf-stat-sep"></div>
+        <div class="conf-stat"><span class="conf-stat-num">40+</span><span class="conf-stat-lbl">Countries
+            Represented</span></div>
+        <div class="conf-stat-sep"></div>
+        <div class="conf-stat"><span class="conf-stat-num">15k+</span><span class="conf-stat-lbl">Papers
+            Published</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ YEAR TABS ══════════════════════ -->
+  <section class="conf-tabs-bar" id="conf-tabs-bar">
+    <div class="conf-tabs-inner">
+      <!-- <button class="year-tab" data-year="2028" id="tab-2028">
+      <i class="fa-solid fa-calendar-days"></i> 2028
+    </button> -->
+      <button class="year-tab" data-year="2027" id="tab-2027">
+        <i class="fa-solid fa-calendar-days"></i> 2027
+      </button>
+      <button class="year-tab" data-year="2026" id="tab-2026">
+        <i class="fa-solid fa-calendar-days"></i> 2026
+      </button>
+
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════ CARDS GRID ══════════════════════ -->
+  <section class="conf-grid-wrap" id="conf-grid-wrap">
+    <div class="conf-grid" id="conf-grid" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 24px;">
+
+      <!-- ────────────── 2027 ────────────── -->
+      <!-- <div class="conference-card" data-year="2027" id="card-iccct2027">
+      <div class="conference-card-image">
+        <img src="assets/images/logo.png" alt="ICCCT 2027 Logo"
+             onerror="this.src='assets/images/logo.png'">
+      </div>
+      <div class="conference-card-body">
+        <h3 class="conference-title">8th International Conference on Communication and Computational Technologies (ICCCT 2027)</h3>
+        <p class="conference-location"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
+        <div class="conference-info">
+          <div class="info-row"><i class="fa-solid fa-calendar-plus"></i><span><strong>Start Date:</strong> Jan 15 2027</span></div>
+          <div class="info-row"><i class="fa-solid fa-calendar-check"></i><span><strong>End Date:</strong> Jan 16 2027</span></div>
+          <div class="info-row"><i class="fa-solid fa-file-circle-check"></i><span><strong>Paper Submission Last Date:</strong> Nov 20 2026</span></div>
+        </div>
+      </div>
+      <div class="conference-footer">
+        <a href="#" class="conference-code" id="badge-iccct2027">ICCCT2027</a>
+        <span class="conference-status upcoming">Upcoming</span>
+      </div>
+    </div> -->
+
+      <!-- ────────────── 2026 ────────────── -->
+      <div class="conference-card" data-year="2026" id="card-wcsc2026" style="max-width: 350px; width: 100%;">
+        <div class="conference-card-image">
+          <img src="assets/images/conferences/wcsc2026.png" alt="WCSC 2026 Logo"
+            onerror="this.src='assets/images/logo.png'">
+        </div>
+        <div class="conference-card-body">
+          <h3 class="conference-title">International Conference on
+            “Synergy in Mathematics: Advances in Fractional Calculus and Engineering Applications” (ICSM-AFCEA 2026)
+          </h3>
+          <p class="conference-location"><i class="fa-solid fa-location-dot"></i> Organized by ICBAS, SVSS &amp; Siirt
+            University</p>
+          <div class="conference-info">
+            <div class="info-row"><i class="fa-solid fa-calendar-plus"></i><span><strong>Start Date:</strong> Oct 05
+                2026</span></div>
+            <div class="info-row"><i class="fa-solid fa-calendar-check"></i><span><strong>End Date:</strong> Oct 06
+                2026</span></div>
+            <div class="info-row"><i class="fa-solid fa-file-circle-check"></i><span><strong>Paper Submission Last
+                  Date:</strong> Nov 01 2025</span></div>
+          </div>
+        </div>
+        <div class="conference-footer">
+          <a href="icsm-afcea2026.html" class="conference-code" id="badge-wcsc2026">ICSM-AFCEA2026</a>
+          <span class="conference-status upcoming">Upcoming</span>
+        </div>
+      </div>
+
+
+
+    </div><!-- /.conf-grid -->
+
+    <!-- Empty state -->
+    <div class="conf-empty-state" id="conf-empty-state" style="display:none;">
+      <i class="fa-solid fa-calendar-xmark"></i>
+      <p>No conferences listed for this year yet.</p>
+    </div>
+
+  </section><!-- /.conf-grid-wrap -->
+
+  <script src="assets/js/navbar-include.js" defer></script>
+  <script src="assets/js/footer-include.js" defer></script>
+  <script src="assets/js/conference-tabs.js" defer></script>
+</body>
+
+</html>

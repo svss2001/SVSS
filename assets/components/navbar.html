@@ -1,0 +1,218 @@
+<!-- ═══════════════════════════════════════════════════════════
+     SCRS Site Navbar Component
+     Include on any page with:
+       <link rel="stylesheet" href="assets/css/style.css">
+       <link rel="stylesheet" href="assets/css/navbar.css">
+       <script src="assets/js/navbar-include.js" defer></script>
+     OR copy-paste this block directly into your <body>.
+     ═══════════════════════════════════════════════════════════ -->
+
+<div id="site-navbar">
+
+    <!-- ── TIER 1 : Utility Bar ────────────────────────── -->
+    <!-- <div class="nav-utility">
+    <div class="col-md-6 col-sm-6 text-left">
+      <input
+        type="search"
+        id="nav-search-input"
+        class="search-input"
+        placeholder="Search"
+        aria-label="Search SCRS"
+      >
+      <button class="search-btn" id="nav-search-btn">Search</button>
+    </div>
+    <div class="nav-utility-links">
+      <a href="#" id="link-scrs-fellow">SCRS Fellow</a>
+      <span class="nav-pipe">|</span>
+      <a href="#" id="link-scrs-collaborators">SCRS Collaborators</a>
+    </div>
+  </div> -->
+
+    <!-- ── TIER 2 : Brand / Identity Bar ───────────────── -->
+    <div class="nav-brand">
+
+        <div class="nav-brand-container">
+
+            <div class="nav-brand-left">
+
+                <a href="index.html" class="nav-logo-link">
+                    <img src="assets/images/logo.png" class="nav-logo">
+                </a>
+
+                <div class="nav-brand-text">
+                    <h1 class="nav-org-name">
+                        SIDDHI VINAYAK SHIKSHA SAMITI
+                    </h1>
+
+                    <p class="nav-org-tagline">
+                        Registered under the Societies Registration Act XXI of 1860
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="nav-brand-right">
+
+                <a href="#" class="nav-auth-btn">Login</a>
+
+                <a href="#" class="nav-auth-btn nav-auth-btn--filled">
+                    Register
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div><!-- /#site-navbar -->
+
+<!-- ── TIER 3 : Main Navigation Links ─────────────────────────
+       NOTE: This element is OUTSIDE #site-navbar on purpose.
+       position:sticky only works when the element is NOT confined
+       to a short parent — being a sibling of #site-navbar lets it
+       stick across the full page scroll height.
+  ────────────────────────────────────────────────────────────── -->
+<nav class="nav-links-bar" id="nav-links-bar" aria-label="Primary Navigation">
+
+    <ul class="nav-links-list" id="nav-links-list">
+
+        <li>
+            <a href="/icsm-afcea2026.html" class="nav-link" id="navl-home">
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-about.html" class="nav-link" id="navl-about">
+                <span>About</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-scope.html" class="nav-link" id="navl-scope">
+                <span>Scope</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-speakers.html" class="nav-link" id="navl-speakers">
+                <span>Speakers</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-committee.html" class="nav-link" id="navl-committee">
+                <span>Committee</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-special-sessions.html" class="nav-link" id="navl-special-sessions">
+                <span>Special Sessions</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="conferences.html" class="nav-link" id="navl-conferences">
+                <span>Conferences</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-submission.html" class="nav-link" id="navl-submission">
+                <span>Submission</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-publication.html" class="nav-link" id="navl-publication">
+                <span>Publication</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-registration.html" class="nav-link" id="navl-registration">
+                <span>Registration</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-awards.html" class="nav-link" id="navl-awards">
+                <span>Awards & Recognitions</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-contact.html" class="nav-link" id="navl-contact">
+                <span>Contact Us</span>
+            </a>
+        </li>
+
+        <!-- <li>
+            <a href="people.html" class="nav-link" id="navl-people">
+                <span>People</span>
+            </a>
+        </li> -->
+
+        <!-- <li>
+            <a href="sponsorship.html" class="nav-link" id="navl-sponsorship">
+                <span>Sponsorship</span>
+            </a>
+        </li> -->
+
+        <!-- <li>
+            <a href="publications.html" class="nav-link" id="navl-publications">
+                <span>Publications</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="insights.html" class="nav-link" id="navl-insights">
+                <span>Insights (Tech Magazine)</span>
+            </a>
+        </li> -->
+
+
+
+        <!--  <li>
+            <a href="hackathon.html" class="nav-link" id="navl-hackathon">
+                <span>Hackathon</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="international-centers.html" class="nav-link" id="navl-int-centers">
+                <span>International Centers</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="join.html" class="nav-link" id="navl-join">
+                <span>Join SCRS</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="fellow.html" class="nav-link" id="navl-fellow">
+                <span>SCRS Fellow</span>
+            </a>
+        </li> -->
+
+        <!-- <li>
+            <a href="contact.html" class="nav-link" id="navl-contact">
+                <span>Contact Us</span>
+            </a>
+        </li> -->
+
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle Navigation" aria-expanded="false"
+        aria-controls="nav-links-list">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</nav>

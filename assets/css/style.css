@@ -1,0 +1,32 @@
+:root{
+
+    /* Brand Colors */
+
+    --primary:#8DD069;
+    --secondary:#60A665;
+
+    --blue:#2F80ED;
+    --blue-dark:#2563EB;
+
+    --teal:#2C7961;
+    --dark-green:#245743;
+
+    --background:#0A0F14;
+    --background-2:#111827;
+
+    --navbar:#0F172A;
+
+    --white:#FFFFFF;
+    --gray:#E5E7EB;
+
+    --card:#16202A;
+
+    --border:rgba(141,208,105,.15);
+
+    --shadow:0 12px 35px rgba(0,0,0,.35);
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+}
