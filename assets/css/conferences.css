@@ -178,7 +178,7 @@ body {
    CONFERENCE CARD  (matches screenshot)
 ═══════════════════════════════════════════════════════════════ */
 .conference-card {
-    background   : #d8e8f7;   /* light blue — exactly as screenshot */
+    background   : var(--card);   /* light blue — exactly as screenshot */
     border-radius: 14px;
     display      : flex;
     flex-direction: column;

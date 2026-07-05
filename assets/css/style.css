@@ -11,22 +11,32 @@
     --teal:#2C7961;
     --dark-green:#245743;
 
-    --background:#0A0F14;
-    --background-2:#111827;
-
+    /* Backgrounds for Light Theme */
+    --background:#FFFFFF;
+    --background-2:#FFFFFF;
+    
+    /* Keep Navbar Dark for contrast */
     --navbar:#0F172A;
 
+    /* Text Colors */
     --white:#FFFFFF;
     --gray:#E5E7EB;
+    --text-main: #000000;
+    --text-muted: #000000;
 
-    --card:#16202A;
+    /* Cards and Borders */
+    --card:#F9FAFB;
+    --border:rgba(141,208,105,.25);
+    --border-light: rgba(0, 0, 0, 0.08);
 
-    --border:rgba(141,208,105,.15);
-
-    --shadow:0 12px 35px rgba(0,0,0,.35);
+    --shadow:0 8px 30px rgba(0,0,0,.06);
 
     --radius:18px;
 
     --transition:.35s ease;
 
+}
+
+p {
+    color: var(--text-muted);
 }

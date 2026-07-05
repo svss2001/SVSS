@@ -6,7 +6,7 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--background);
-    color: var(--white);
+    color: var(--text-main);
     margin: 0;
     overflow-x: hidden;
 }
@@ -18,7 +18,6 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 /* ── HERO SECTION ── */
 .icsm-hero {
     position: relative;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,11 +103,11 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
     gap: 12px;
     font-size: 1.3rem;
     font-weight: 600;
-    color: var(--white);
+    color: var(--text-main);
     background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
     padding: 16px 36px;
     border-radius: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-light);
     backdrop-filter: blur(16px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
@@ -121,12 +120,12 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 
 /* ── GLASS PANELS ── */
 .glass-panel {
-    background: rgba(22, 32, 42, 0.6);
+    background: var(--card);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--border-light);
+    border-top: 1px solid var(--border-light);
+    border-left: 1px solid var(--border-light);
     border-radius: 24px;
     padding: 30px 40px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
@@ -150,13 +149,13 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 .icsm-organizers-card h3 {
     margin: 0 0 25px;
     font-size: 1.4rem;
-    color: var(--gray);
+    color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 2px;
     display: flex;
     align-items: center;
     gap: 12px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid var(--border-light);
     padding-bottom: 15px;
 }
 
@@ -178,7 +177,7 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
     align-items: center;
     gap: 20px;
     font-size: 1.15rem;
-    color: var(--gray);
+    color: var(--text-muted);
 }
 
 .org-icon {
@@ -196,7 +195,7 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 }
 
 .org-text strong {
-    color: var(--white);
+    color: var(--text-main);
     font-weight: 600;
 }
 
@@ -237,14 +236,14 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.03);
-    color: var(--white);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0,0,0,0.02);
+    color: var(--text-main);
+    border: 1px solid rgba(0,0,0,0.1);
     backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--border-light);
     border-color: var(--white);
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
@@ -266,7 +265,7 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 .highlight-item {
     text-align: center;
     padding: 45px 35px;
-    background: linear-gradient(160deg, rgba(22, 32, 42, 0.85), rgba(17, 24, 39, 0.95));
+    background: var(--card);
 }
 
 .highlight-item i {
@@ -294,12 +293,12 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 .highlight-item h4 {
     font-size: 1.4rem;
     margin: 0 0 15px;
-    color: var(--white);
+    color: var(--text-main);
     letter-spacing: 0.5px;
 }
 
 .highlight-item p {
-    color: var(--gray);
+    color: var(--text-muted);
     margin: 0;
     line-height: 1.7;
     font-size: 1.05rem;
@@ -320,7 +319,6 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 
 .icsm-about-content {
     padding: 60px 50px;
-    background: linear-gradient(145deg, rgba(22, 32, 42, 0.4), rgba(17, 24, 39, 0.6));
 }
 
 .about-header {
@@ -341,13 +339,13 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 .about-header h2 {
     font-size: clamp(2rem, 4vw, 2.8rem);
     margin: 0;
-    color: var(--white);
+    color: var(--text-main);
 }
 
 .about-text p {
     font-size: 1.15rem;
     line-height: 1.8;
-    color: var(--gray);
+    color: var(--text-muted);
     margin-bottom: 25px;
     text-align: justify;
 }
@@ -362,7 +360,7 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 
 .about-objectives h3 {
     font-size: 1.4rem;
-    color: var(--white);
+    color: var(--text-main);
     margin: 0 0 25px 0;
     line-height: 1.5;
 }
@@ -381,7 +379,7 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
     align-items: flex-start;
     gap: 15px;
     font-size: 1.1rem;
-    color: var(--gray);
+    color: var(--text-muted);
     line-height: 1.5;
 }
 
@@ -405,7 +403,7 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
     margin: 0 auto 50px;
     font-size: 1.15rem;
     line-height: 1.8;
-    color: var(--gray);
+    color: var(--text-muted);
 }
 
 .icsm-accordion {
@@ -417,17 +415,17 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 }
 
 .track-details {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0,0,0,0.01);
+    border: 1px solid var(--border-light);
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
 }
 
 .track-details[open] {
-    background: rgba(22, 32, 42, 0.6);
+    background: var(--card);
     border-color: rgba(141, 208, 105, 0.3);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .track-summary {
@@ -439,7 +437,7 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--white);
+    color: var(--text-main);
     list-style: none;
     transition: background 0.3s ease;
     border-bottom: 1px solid transparent;
@@ -451,17 +449,17 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 
 .track-details[open] .track-summary {
     background: rgba(37, 99, 235, 0.15);
-    border-bottom-color: rgba(255, 255, 255, 0.05);
+    border-bottom-color: rgba(0,0,0,0.03);
     color: var(--primary);
 }
 
 .track-summary:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0,0,0,0.03);
 }
 
 .toggle-icon {
     transition: transform 0.3s ease;
-    color: var(--gray);
+    color: var(--text-muted);
 }
 
 .track-details[open] .toggle-icon {
@@ -485,7 +483,7 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 .track-content ul li {
     position: relative;
     padding-left: 25px;
-    color: var(--gray);
+    color: var(--text-muted);
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -552,13 +550,13 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 .speaker-info h3 {
     margin: 0 0 10px;
     font-size: 1.25rem;
-    color: var(--white);
+    color: var(--text-main);
     letter-spacing: 0.5px;
 }
 
 .speaker-info p {
     margin: 0;
-    color: var(--gray);
+    color: var(--text-muted);
     font-size: 0.95rem;
     line-height: 1.5;
     display: flex;
@@ -580,7 +578,7 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
 .section-title {
     text-align: center;
     font-size: 2.2rem;
-    color: var(--white);
+    color: var(--text-main);
     margin-bottom: 40px;
     position: relative;
     padding-bottom: 15px;

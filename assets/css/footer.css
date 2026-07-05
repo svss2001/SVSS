@@ -338,3 +338,5 @@ place-items: center;
     .footer-bottom-container { align-items: center; text-align: center; }
     .footer-copyright { text-align: center; width: 100%; font-size: 11px; }
 }
+
+.footer-main p, .footer-about-text { color: var(--white); }
