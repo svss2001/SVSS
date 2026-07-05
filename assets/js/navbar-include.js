@@ -74,6 +74,18 @@
     /* Hamburger toggle */
     var hamburger    = document.getElementById('nav-hamburger');
     var navLinksList = document.getElementById('nav-links-list');
+    var navLinksBar  = document.getElementById('nav-links-bar');
+    var siteNavbar   = document.getElementById('site-navbar');
+
+    function updateNavOffset() {
+        if (window.innerWidth <= 768 && siteNavbar && navLinksBar) {
+            navLinksBar.style.top = siteNavbar.offsetHeight + 'px';
+        } else if (navLinksBar) {
+            navLinksBar.style.top = '0';
+        }
+    }
+    window.addEventListener('resize', updateNavOffset);
+    updateNavOffset();
 
     if (hamburger && navLinksList) {
       hamburger.addEventListener('click', function () {

@@ -663,6 +663,9 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
     .objective-list {
         grid-template-columns: 1fr;
     }
+    .glass-panel {
+        padding: 25px 20px;
+    }
 }
 
 /* ── COMPREHENSIVE MOBILE RESPONSIVENESS (< 576px) ── */
@@ -693,5 +696,8 @@ h1, h2, h3, h4, .icsm-badge, .btn-primary, .btn-secondary {
     .btn-primary, .btn-secondary {
         padding: 12px 15px;
         font-size: 0.95rem;
+    }
+    .glass-panel {
+        padding: 20px 15px;
     }
 }

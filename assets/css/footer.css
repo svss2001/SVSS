@@ -9,12 +9,14 @@
     --footer-border    : rgba(255,255,255,0.07);
 }
 
-/* ── Wrapper reset ───────────────────────────────────────────── */
+#site-footer {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
 #site-footer * {
     margin     : 0;
     padding    : 0;
     box-sizing : border-box;
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
 /* ╔════════════════════════════════════╗
@@ -25,8 +27,8 @@
     padding    : 56px 0 44px;
     position   : relative;
     overflow   : hidden;
-    height: 40vh;
-
+    min-height : 40vh;
+    height     : auto;
 }
 
 /* Subtle globe-grid watermark (same language as navbar) */
@@ -53,6 +55,31 @@
     gap                  : 48px;
 }
 
+.footer-col {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer-col-icon-wrapper {
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 5px; /* Aligns with the title text baseline better */
+}
+
+.footer-col-content {
+    flex: 1;
+    min-width: 0; /* Prevents overflow */
+}
+
 /* ── Column heading ──────────────────────────────────────────── */
 .footer-col-title {
     font-size     : 22px;
@@ -64,6 +91,7 @@
     padding-bottom: 10px;
     position      : relative;
     display       : inline-block;
+    margin-top    : 5px; /* slightly push down to align with icon vertically */
 }
 
 .footer-col-title::after {
@@ -283,7 +311,8 @@
 .footer-bottom {
     background: var(--footer-bottom-bg);
     padding   : 14px 0;
-    height: 50px;
+    min-height: 50px;
+    height    : auto;
     display: flex;
     align-items: center;
     justify-content: center;

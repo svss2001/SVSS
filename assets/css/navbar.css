@@ -126,7 +126,8 @@
             var(--nav-brand-end));
     position: relative;
     overflow: visible;
-    height: 150px;
+    min-height: 150px;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -373,19 +374,33 @@
 }
 
 @media (max-width:768px) {
+    #site-navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1001; /* Above nav-links-bar which is 1000 */
+    }
+
     .nav-brand {
-        padding: 20px;
+        padding: 20px 15px;
+    }
+
+    .nav-brand-container {
+        flex-wrap: wrap;
+        padding: 0;
     }
 
     .nav-brand-left {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
         align-items: center;
+        width: auto;
+        flex: 1;
     }
 
     .nav-brand-right {
         justify-content: center;
         width: 100%;
+        margin-top: 15px;
     }
 
     .nav-org-name {
@@ -462,6 +477,12 @@
 /* ==========================================
    Navigation Links
 ========================================== */
+
+/* Hide mobile-only elements by default */
+.nav-icon-wrapper, .nav-chevron {
+    display: none;
+}
+
 
 .nav-link {
 
@@ -684,82 +705,109 @@
 @media(max-width:768px) {
 
     .nav-brand {
-
-        flex-direction: column;
-
-        gap: 18px;
-
-        text-align: center;
-
+        /* Already handled above, keep empty to avoid breaking layout */
     }
 
     .nav-brand-left {
-
-        flex-direction: column;
-
+        /* Already handled above */
     }
 
     .nav-hamburger {
 
         display: flex;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 6px;
+        padding: 8px 10px;
 
+    }
+
+    .nav-links-bar {
+        height: auto;
+        min-height: 0;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        z-index: 1005;
     }
 
     .nav-links-list {
-
         display: none;
-
-        position: absolute;
-
-        top: 100%;
-
-        left: 0;
-
+        position: static;
         width: 100%;
-
-        background: #0F172A;
-
+        background: #010a17; /* Dark navy */
         flex-direction: column;
-
+        align-items: stretch;
         box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
-
         border-top: 2px solid var(--primary);
+        z-index: 1005;
+        padding: 15px;
+        gap: 8px;
+    }
 
-        z-index: 999;
-
+    .nav-links-list li {
+        width: 100%;
     }
 
     .nav-links-list.open {
-
         display: flex;
-
     }
 
     .nav-link {
-
+        display: flex;
+        width: 100%;
+        align-items: center;
         justify-content: flex-start;
-
-        padding: 15px 20px;
-
-        border-bottom: 1px solid rgba(255, 255, 255, .08);
-
-        border-radius: 0;
-
+        padding: 10px 15px;
+        background: #0a192f; /* Slightly lighter navy for pills */
+        border: 1px solid rgba(255,255,255,0.05);
+        border-radius: 8px;
         transform: none !important;
-
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
     }
 
-    .nav-link::before {
-
+    .nav-link::before, .nav-link::after {
         display: none;
-
     }
 
-    .nav-link::after {
-
-        display: none;
-
+    /* Mobile specific icons */
+    .nav-icon-wrapper {
+        display: flex; /* Override global display: none */
+        width: 32px;
+        height: 32px;
+        background: rgba(46, 204, 113, 0.1);
+        color: #2ecc71;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        font-size: 14px;
+        flex-shrink: 0;
+        border: 1px solid rgba(46, 204, 113, 0.2);
+        transition: all 0.3s ease;
     }
+
+    .nav-chevron {
+        display: block; /* Override global display: none */
+        margin-left: auto;
+        color: rgba(255,255,255,0.8);
+        font-size: 12px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link.active {
+        background: #1a73e8; /* Bright blue background */
+        border-color: transparent;
+        color: white;
+    }
+
+    .nav-link.active .nav-icon-wrapper {
+        background: #62c370; /* Solid light green */
+        color: white;
+        border-color: transparent;
+    }
+
 
 }
 
