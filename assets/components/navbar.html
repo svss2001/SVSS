@@ -1,4 +1,4 @@
-<!-- ═══════════════════════════════════════════════════════════
+﻿<!-- ═══════════════════════════════════════════════════════════
      SCRS Site Navbar Component
      Include on any page with:
        <link rel="stylesheet" href="assets/css/style.css">
@@ -84,159 +84,135 @@
 <nav class="nav-links-bar" id="nav-links-bar" aria-label="Primary Navigation">
 
     <ul class="nav-links-list" id="nav-links-list">
-
         <li>
-            <a href="/index.html" class="nav-link" id="navl-home">
+            <a href="index.html" class="nav-link" id="navl-home">
                 <div class="nav-icon-wrapper"><i class="fa-solid fa-house"></i></div>
-                <span>Home</span>
+                <span>HOME</span>
                 <i class="fa-solid fa-chevron-right nav-chevron"></i>
             </a>
         </li>
-
-        <li>
-            <a href="/icsm-afcea2026-about.html" class="nav-link" id="navl-about">
-                <div class="nav-icon-wrapper"><i class="fa-solid fa-circle-info"></i></div>
-                <span>About</span>
-                <i class="fa-solid fa-chevron-right nav-chevron"></i>
-            </a>
+        <li class="has-dropdown">
+            <div class="nav-link-wrapper">
+                <a href=# class="nav-link" id="navl-about">
+                    <div class="nav-icon-wrapper"><i class="fa-solid fa-circle-info"></i></div>
+                    <span>ABOUT</span>
+                </a>
+                <button class="dropdown-toggle" aria-expanded="false"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <ul class="nav-dropdown open">
+                <li><a href="about-logo.html">ABOUT LOGO</a></li>
+                <li><a href="about-scrs.html">ABOUT SCRS</a></li>
+                <li><a href="objectives.html">OBJECTIVES</a></li>
+            </ul>
         </li>
-
-        <li>
-            <a href="/icsm-afcea2026-scope.html" class="nav-link active" id="navl-scope">
-                <div class="nav-icon-wrapper"><i class="fa-solid fa-crosshairs"></i></div>
-                <span>Scope</span>
-                <i class="fa-solid fa-chevron-right nav-chevron"></i>
-            </a>
+        <li class="has-dropdown">
+            <div class="nav-link-wrapper">
+                <a href=# class="nav-link" id="navl-people">
+                    <div class="nav-icon-wrapper"><i class="fa-solid fa-users"></i></div>
+                    <span>PEOPLE</span>
+                </a>
+                <button class="dropdown-toggle" aria-expanded="false"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <ul class="nav-dropdown open">
+                <li><a href="advisory-committee.html">ADVISORY COMMITTEE</a></li>
+                <li><a href="conference-committee.html">CONFERENCE COMMITTEE</a></li>
+                <li><a href="organizations.html">ORGANIZATIONS</a></li>
+                <li><a href="core-committee.html">CORE COMMITTEE</a></li>
+            </ul>
         </li>
-
-        <li>
-            <a href="/icsm-afcea2026-speakers.html" class="nav-link" id="navl-speakers">
-                <div class="nav-icon-wrapper"><i class="fa-solid fa-microphone"></i></div>
-                <span>Speakers</span>
-                <i class="fa-solid fa-chevron-right nav-chevron"></i>
-            </a>
+        <li class="has-dropdown">
+            <div class="nav-link-wrapper">
+                <a href="sponsorship.html" class="nav-link" id="navl-sponsorship">
+                    <div class="nav-icon-wrapper"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <span>SPONSORSHIP</span>
+                </a>
+                <button class="dropdown-toggle" aria-expanded="false"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <ul class="nav-dropdown"></ul>
         </li>
-
-        <li>
-            <a href="/icsm-afcea2026-committee.html" class="nav-link" id="navl-committee">
-                <div class="nav-icon-wrapper"><i class="fa-solid fa-users"></i></div>
-                <span>Committee</span>
-                <i class="fa-solid fa-chevron-right nav-chevron"></i>
-            </a>
+        <li class="has-dropdown">
+            <div class="nav-link-wrapper">
+                <a href="publications.html" class="nav-link" id="navl-publications">
+                    <div class="nav-icon-wrapper"><i class="fa-solid fa-book-open"></i></div>
+                    <span>PUBLICATIONS</span>
+                </a>
+                <button class="dropdown-toggle" aria-expanded="false"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <ul class="nav-dropdown"></ul>
         </li>
-
-        <li>
-            <a href="/icsm-afcea2026-special-sessions.html" class="nav-link" id="navl-special-sessions">
-                <div class="nav-icon-wrapper"><i class="fa-solid fa-star"></i></div>
-                <span>Special Sessions</span>
-                <i class="fa-solid fa-chevron-right nav-chevron"></i>
-            </a>
+        <li class="has-dropdown">
+            <div class="nav-link-wrapper">
+                <a href="insights.html" class="nav-link" id="navl-insights">
+                    <div class="nav-icon-wrapper"><i class="fa-solid fa-lightbulb"></i></div>
+                    <span>INSIGHTS</span>
+                </a>
+                <button class="dropdown-toggle" aria-expanded="false"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <ul class="nav-dropdown"></ul>
         </li>
-
-        <li>
-            <a href="conferences.html" class="nav-link" id="navl-conferences">
-                <div class="nav-icon-wrapper"><i class="fa-solid fa-calendar-days"></i></div>
-                <span>Conferences</span>
-                <i class="fa-solid fa-chevron-right nav-chevron"></i>
-            </a>
+        <li class="has-dropdown">
+            <div class="nav-link-wrapper">
+                <a href="conferences.html" class="nav-link" id="navl-conferences">
+                    <div class="nav-icon-wrapper"><i class="fa-solid fa-calendar-days"></i></div>
+                    <span>CONFERENCES</span>
+                </a>
+                <button class="dropdown-toggle" aria-expanded="false"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <ul class="nav-dropdown"></ul>
         </li>
-
-        <li>
-            <a href="/icsm-afcea2026-submission.html" class="nav-link" id="navl-submission">
-                <div class="nav-icon-wrapper"><i class="fa-solid fa-paper-plane"></i></div>
-                <span>Submission</span>
-                <i class="fa-solid fa-chevron-right nav-chevron"></i>
-            </a>
+        <li class="has-dropdown">
+            <div class="nav-link-wrapper">
+                <a href="hackathon.html" class="nav-link" id="navl-hackathon">
+                    <div class="nav-icon-wrapper"><i class="fa-solid fa-laptop-code"></i></div>
+                    <span>HACKATHON</span>
+                </a>
+                <button class="dropdown-toggle" aria-expanded="false"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <ul class="nav-dropdown"></ul>
         </li>
-
-        <li>
-            <a href="/icsm-afcea2026-publication.html" class="nav-link" id="navl-publication">
-                <div class="nav-icon-wrapper"><i class="fa-solid fa-book-open"></i></div>
-                <span>Publication</span>
-                <i class="fa-solid fa-chevron-right nav-chevron"></i>
-            </a>
+        <li class="has-dropdown">
+            <div class="nav-link-wrapper">
+                <a href=# class="nav-link" id="navl-int-centers">
+                    <div class="nav-icon-wrapper"><i class="fa-solid fa-globe"></i></div>
+                    <span>INTERNATIONAL CENTERS</span>
+                </a>
+                <button class="dropdown-toggle" aria-expanded="false"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <ul class="nav-dropdown open">
+                <li><a href="wust-center.html">WUST CENTER</a></li>
+                <li><a href="fiu-center.html">FIU CENTER</a></li>
+            </ul>
         </li>
-
-        <li>
-            <a href="/icsm-afcea2026-registration.html" class="nav-link" id="navl-registration">
-                <div class="nav-icon-wrapper"><i class="fa-solid fa-clipboard-list"></i></div>
-                <span>Registration</span>
-                <i class="fa-solid fa-chevron-right nav-chevron"></i>
-            </a>
+        <li class="has-dropdown">
+            <div class="nav-link-wrapper">
+                <a href="join.html" class="nav-link" id="navl-join">
+                    <div class="nav-icon-wrapper"><i class="fa-solid fa-user-plus"></i></div>
+                    <span>JOIN SCRS</span>
+                </a>
+                <button class="dropdown-toggle" aria-expanded="false"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <ul class="nav-dropdown"></ul>
         </li>
-
-        <li>
-            <a href="/icsm-afcea2026-awards.html" class="nav-link" id="navl-awards">
-                <div class="nav-icon-wrapper"><i class="fa-solid fa-trophy"></i></div>
-                <span>Awards & Recognitions</span>
-                <i class="fa-solid fa-chevron-right nav-chevron"></i>
-            </a>
+        <li class="has-dropdown">
+            <div class="nav-link-wrapper">
+                <a href="fellow.html" class="nav-link" id="navl-fellow">
+                    <div class="nav-icon-wrapper"><i class="fa-solid fa-user-graduate"></i></div>
+                    <span>SCRS FELLOW</span>
+                </a>
+                <button class="dropdown-toggle" aria-expanded="false"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <ul class="nav-dropdown"></ul>
         </li>
-
-        <li>
-            <a href="/icsm-afcea2026-contact.html" class="nav-link" id="navl-contact">
-                <div class="nav-icon-wrapper"><i class="fa-solid fa-phone"></i></div>
-                <span>Contact Us</span>
-                <i class="fa-solid fa-chevron-right nav-chevron"></i>
-            </a>
+        <li class="has-dropdown">
+            <div class="nav-link-wrapper">
+                <a href="contact.html" class="nav-link" id="navl-contact">
+                    <div class="nav-icon-wrapper"><i class="fa-solid fa-phone"></i></div>
+                    <span>CONTACT US</span>
+                </a>
+                <button class="dropdown-toggle" aria-expanded="false"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <ul class="nav-dropdown"></ul>
         </li>
-
-        <!-- <li>
-            <a href="people.html" class="nav-link" id="navl-people">
-                <span>People</span>
-            </a>
-        </li> -->
-
-        <!-- <li>
-            <a href="sponsorship.html" class="nav-link" id="navl-sponsorship">
-                <span>Sponsorship</span>
-            </a>
-        </li> -->
-
-        <!-- <li>
-            <a href="publications.html" class="nav-link" id="navl-publications">
-                <span>Publications</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="insights.html" class="nav-link" id="navl-insights">
-                <span>Insights (Tech Magazine)</span>
-            </a>
-        </li> -->
-
-
-
-        <!--  <li>
-            <a href="hackathon.html" class="nav-link" id="navl-hackathon">
-                <span>Hackathon</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="international-centers.html" class="nav-link" id="navl-int-centers">
-                <span>International Centers</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="join.html" class="nav-link" id="navl-join">
-                <span>Join SCRS</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="fellow.html" class="nav-link" id="navl-fellow">
-                <span>SCRS Fellow</span>
-            </a>
-        </li> -->
-
-        <!-- <li>
-            <a href="contact.html" class="nav-link" id="navl-contact">
-                <span>Contact Us</span>
-            </a>
-        </li> -->
-
     </ul>
 
 </nav>

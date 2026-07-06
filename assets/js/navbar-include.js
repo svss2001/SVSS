@@ -1,4 +1,4 @@
-/**
+﻿/**
  * navbar-include.js
  * Fetches assets/components/navbar.html and injects it at the
  * top of <body> on any page that includes this script.
@@ -129,6 +129,30 @@
         if (e.key === 'Enter') searchBtn.click();
       });
     }
+
+        /* Dropdown toggle for mobile */
+    var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            var dropdown = this.parentElement.nextElementSibling;
+            if (dropdown && dropdown.classList.contains('nav-dropdown')) {
+                var isOpen = dropdown.classList.toggle('open');
+                this.setAttribute('aria-expanded', isOpen);
+                // Toggle icon
+                var icon = this.querySelector('i');
+                if(icon) {
+                    if(isOpen) {
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    } else {
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    }
+                }
+            }
+        });
+    });
 
     /* ── Sticky nav-links-bar detection ─────────────────────────
      *
