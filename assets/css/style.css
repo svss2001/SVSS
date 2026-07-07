@@ -773,13 +773,7 @@ p {
 
 @media(max-width:768px) {
 
-    .nav-brand {
-        /* Already handled above, keep empty to avoid breaking layout */
-    }
-
-    .nav-brand-left {
-        /* Already handled above */
-    }
+    /* Removed empty .nav-brand and .nav-brand-left blocks */
 
     .nav-hamburger {
 
